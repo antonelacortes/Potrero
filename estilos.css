@@ -7,4 +7,4 @@ h3{text-align: left; text-decoration: underline;}
 .texto{background-color: #f7ebe8;}
 footer{text-align: center;}
 nav{text-align: right;}
-#flotante{float: right; background:#f7ebe8;}
+#flotante{position: fixed; top: 75%; right: 1%; width: 70px; height: 70px;}
