@@ -2,9 +2,34 @@ body {color: #1b2f33; font-size: larger;background-color: #f7ebe8;font-family: -
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     background-image: url(./img/receta.png); background-size: 200px;}
 h1{text-align: center; text-decoration:underline;}
-h3{text-align: left; text-decoration: underline;}
+h3{text-align: left; text-decoration: underline;background-color: #f7ebe8;}
 .pasos{text-align: justify;}
 .texto{background-color: #f7ebe8;}
+.enlace{background-color: #f7ebe8;text-decoration: none;}
 footer{text-align: center;}
 nav{text-align: right;}
 #flotante{position: fixed; top: 75%; right: 1%; width: 70px; height: 70px;}
+section{
+    width: 56%;
+    float: left;
+    margin: 1%;
+    padding: 10px;
+    border: 3px solid;
+    box-sizing: border-box;
+    height: auto;
+}
+aside{  width: 40%;
+        float: left;
+        margin: 1%;
+        padding: 10px;
+        border: 3px solid;
+        box-sizing: border-box;
+        height: auto;
+}
+footer{
+    clear: both;
+}
+img:hover{border-radius: 50%;}
+.enlace:hover{color:#1b2f33;text-decoration: underline;}
+.titulo:hover{font-size: 120%;background-color:transparent;}
+iframe:hover{border-radius: 15%;}
