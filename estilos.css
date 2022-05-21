@@ -1,6 +1,9 @@
-body {color: #1b2f33; font-size: larger;background-color: #f7ebe8;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-    background-image: url(./img/receta.png); background-size: 90vh;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*VERSION WEB*/
+@media (min-width:992px) {
+body {color: #1b2f33; font-size: larger;background-color: #f7ebe8; 
+    background-image: url(./img/receta.png); background-size: 90vh; font-family: 'Poppins', sans-serif;}
 h1{text-align: center; text-decoration:underline;font-size: 2em;}
 h3{text-align: left; text-decoration: underline;background-color: #f7ebe8;font-size: 1em;}
 .pasos{text-align: justify;}
@@ -35,3 +38,62 @@ img:hover{border-radius: 50%;}
 .titulo:hover{font-size: 2rem;background-color:transparent;}
 .enlaces:hover{font-size: 2rem;}
 iframe:hover{border-radius: 15%;}
+}
+
+/*VERSION MOVIL*/
+@media (max-width:700px) {
+    header{
+        text-align:left;
+    }
+    body{
+        background-image: none; font-family: 'Poppins', sans-serif;
+    }
+    section{
+        width: 100%;
+        float: left;
+        margin: 1%;
+        padding: 10px;
+        border: 3px solid;
+        box-sizing: border-box;
+        height: auto;
+    }   
+    aside{  width: 100%;
+        float: left;
+        margin: 1%;
+        padding: 10px;
+        border: 3px solid;
+        box-sizing: border-box;
+        height: auto;
+        display:flexbox; 
+}
+    footer{
+        clear: both; display: flex; flex-direction: row;
+    }
+    h1{text-align: center; text-decoration:underline;font-size: 2em;}
+    h3{text-align: left; text-decoration: underline;background-color: #f7ebe8;font-size: 1em;}
+    .enlaces{
+        display: flex; flex-direction: column;
+    }
+    .video {
+        display: none;
+    }
+    .empanadas{ font-size: 2em;font-weight: bold;}
+}
+@media (min-width: 700px) {
+    .empanadas {display: none;}
+}
+
+/*VERSION TABLET*/
+@media (max-width:991px) {
+    body{background-image: url(./img/receta.png);background-size: 100%;
+        background-color: #f7ebe8;font-family: 'Poppins', sans-serif;}
+}
+    footer{text-align: center;}
+    h1{text-align: center; text-decoration:underline;font-size: 2em;}
+    h3{text-align: left; text-decoration: underline;background-color: #f7ebe8;font-size: 1em;}
+    .pasos{text-align: justify;}
+    .texto{background-color: #f7ebe8; font-size: 1em;}
+    .enlaces{background-color: #f7ebe8; display: flex; align-items:flex-start; justify-content: space-between; font-size: 1em;}
+    .contacto{background-color: #f7ebe8;text-decoration: none;}
+    nav{text-align: right;}
+    #flotante{position: fixed; top: 75%; right: 1%; width: 70px; height: 70px;}
