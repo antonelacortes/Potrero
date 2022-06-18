@@ -12,9 +12,16 @@
     <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
+    <script>
+        alert("Bienvenido a mi página")
+    </script>
     <header>
-    <h1>Alfajores Marplatenses</h1>
-    </header>   
+        <header id="header">
+            <h1>Alfajores Marplatenses</h1>
+    </header>  
+    <button onclick="cambiarfondo1()">modo oscuro</button> 
+    <button onclick="cambiarfondo2()">modo claro</button> 
+
     <br>
     <nav class="enlaces">
         <a class="enlace" href="https://www.paulinacocina.net/recetas/dulces-y-postres" target="_blank">Recetas dulces</a>
@@ -115,7 +122,9 @@
         <a href="https://www.facebook.com/paulinacocina.net"> <img src="img/facebook.jpg" alt="facebook" width="50" height="50"></a>
         <a href="https://www.instagram.com/paulinacocina/?hl=es-la"> <img src="img/instagram.jpg" alt="instagram" width="50" height="50"></a>
         <a href="https://twitter.com/paulina_cocina"> <img src="img/twitter.png" alt="twitter" width="50" height="50"></a>
+        <button class="autor" onclick="copy()">Copyright ©</button>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="js/javascript.js"></script>
 </body>
 </html>
